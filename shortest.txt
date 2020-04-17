@@ -1,0 +1,29 @@
+public static void main(String args[]) {
+		  shorTest("Everyone wanna work for TRow Price");
+		 }
+		public static public void shorTest(String s) {
+		  String str = s + " ";
+		  char ch = ' ';
+		  int len = str.length(), l = 0;
+		  int min = len, max = 0;
+		  String shortest_word = "", word = "";
+                  if (!s.isBlank() && !s.isEmpty()) {
+		  for (int i = 0; i < len; i++) {
+		   ch = str.charAt(i);
+		   if (ch != ' ') {
+		    word += ch;
+		   }                                   
+		   else {
+		    l = word.length();
+		    if (l < min) {
+		     min = l;
+		     shortestWord = word;
+		    }                              
+		   
+		  word = "";
+		   }
+		  }
+		  System.out.println("Shortest word = " + shortestWord + " with length " + min);
+		 else {System.out.println("Please enter different string");}
+		 }
+		}

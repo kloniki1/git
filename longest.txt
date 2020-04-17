@@ -1,0 +1,23 @@
+public class longestTest{
+
+	public static void main(String[] args) {
+        System.out.println(longest("I would like to work for TRowPrice"));
+    }
+
+    public static String longest(String inputString){
+        String[] words = inputString.split(" ");
+        int index = 0;
+        if (!inputString.isBlank() && !inputString.isEmpty()) {
+        for(int i = 0; i < words.length; ++i){
+            String current = words[i];
+            if(current.length() > words[index].length()){
+            	System.out.println("Longest word contains: "+current.length()+ " characters");
+                index = i;
+            }
+        }
+        }
+         else {
+               System.out.println("Please enter another string");
+              }
+        return words[index];
+    }

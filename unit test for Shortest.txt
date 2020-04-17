@@ -1,0 +1,18 @@
+@Test
+    public void testLongestWord() {
+        shortest Unit = new shortest();
+
+        String result = Unit(" ");
+
+        assertEquals("Please enter another string", result);
+
+    }
+@Test
+    public void testLongestWord() {
+        longestTest Unit = new longestTest();
+
+        String result = Unit("Please bring me icecream");
+
+        assertEquals("me", result);
+
+    }
